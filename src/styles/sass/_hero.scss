@@ -103,5 +103,9 @@
 @media (min-width:1400px){
     .hero{
         padding: 180px 0 0 0 ;
+        &-description{
+            line-height: 1.7;
+            font-size: 25px;
+        }
     }
 }
