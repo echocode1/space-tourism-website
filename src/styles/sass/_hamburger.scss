@@ -1,0 +1,47 @@
+.hamburger{
+    position: relative;
+    height: 16px;
+    width: 35px;
+    background-color: inherit;
+    border: none;
+    z-index: 101;
+
+    &-top, &-middle, &-base{
+        position: absolute;
+        height: 3px;
+        background-color: $text-cl;
+        right: 0;
+        top: 0;
+        transition: 0.5s ease;
+    }
+    &-top{ 
+        width: 25px;
+    }
+    &-middle{
+        transform: translateY(8px) ;
+        width: 35px;
+    }
+    &-base{
+        transform: translateY(16px) ;
+        width: 25px;
+    }
+    &.rotate{
+        .hamburger-top{
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger-middle{
+            opacity: 0;
+        }
+        .hamburger-base{
+            transform: rotate(-45deg) translate(-5px, 5px);
+        }
+    }
+}
+.hamburger:hover{
+    cursor: pointer;
+}
+@media(min-width:576px){
+    .hamburger{
+        display: none;
+    }
+}

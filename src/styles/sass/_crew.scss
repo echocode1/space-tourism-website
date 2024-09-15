@@ -1,0 +1,192 @@
+.crew{
+    background-image: url($crew--mobile-bg);
+    @include bg--styles;
+
+    @include section-padding-sm;
+    text-align: center;
+    color: $light;
+
+    #crew-light-header{
+    margin-bottom: 24px;
+    letter-spacing: 2.7px;
+    font-size: 16px;
+    font-family:$light-header__font;
+    color: $light;
+}
+    &-flex{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 48%, 52%;
+        gap: 32px;
+        height: 100%;
+        min-height: 100%;
+    }
+    &-text{
+        font-family: $header__font;
+        font-weight: 400;
+        padding-top: 40px;
+        color:$light;
+
+        .crew-role{
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        h2{
+            font-size: 24px;
+            margin-bottom: 24px;
+            font-weight:100;
+        }
+        p{
+            font-size: 15px;
+            font-family: $stack__font;
+            line-height: 1.5;
+            margin-bottom: 99px;
+            color: $text-cl;
+        }
+        ul {
+            @include flex-center;
+            list-style-type: none; 
+            padding: 0; 
+        }
+        ul > li:first-child {
+            margin-left: 0;
+        }
+        .crew-btn, .crew-active {
+            position: relative;
+            width: 10px;
+            height: 10px;
+            margin-left: 20px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        .crew-btn::after, .crew-active::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: $inactive-cl;
+            border-radius: 50%;
+        }
+        .crew-active::after{
+            background-color: $light;
+        }
+    }
+    &-img{
+        padding: 5px 28px;
+        max-height: 350px;
+        img{
+            max-width: 100%;
+            height: 100%;
+        }
+    }
+}
+@media (min-width: 576px){
+    .crew{
+        background-image: url($crew--tab-bg);
+        @include section-padding-md;
+        padding-bottom: 0;
+
+        #crew-light-header{
+            text-align: left;
+            font-size: 20px;
+            margin-bottom: 64px;
+        }
+        &-text{
+            padding:0 89px;
+
+            .crew-role{ 
+                font-size: 19px; 
+                letter-spacing: 7px;
+            }
+            h2{ font-size: 40px;}
+            p{
+                font-size: 16px;
+                line-height: 1.7;
+                margin-bottom: 60px;
+            }
+            .crew-btn, .crew-active {
+                width: 15px;
+                height: 15px;
+                margin-left: 40px;
+            }
+        }
+        &-img{
+            padding: 5px 128px;
+            max-height: 510px;
+            overflow: hidden;
+            img{
+                max-width: 100%;
+                height: 560px;
+            }
+        }
+    }
+}
+@media (min-width: 900px){
+    .crew-text p{
+       font-size: 20px;
+    }
+}
+@media (min-width: 1000px){
+    .crew-text p{
+       font-size: 22px;
+    }
+}
+@media (min-width: 1000px){
+    .crew-text p{
+       font-size: 24px;
+    }
+}
+@media (min-width: 1200px){
+    .crew{
+        background-image: url($screw--desktop-bg);
+        padding: 184px 165px 48px 165px;
+        margin-top: -136px;
+        text-align: left;
+
+        #crew-light-header{
+            font-size: 28px;
+            margin-bottom: 24px;
+        }
+        &-flex{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            height: 734px;
+        }
+        &-text{ padding:0; }
+        .crew-text{
+            display: flex;
+            flex-direction: column;
+        }
+        #crew-text-flex{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 0 0 86%;
+        }
+        .crew-role{
+            font-size: 22px; 
+            letter-spacing: 8px;
+        }
+        h2{ font-size: 50px;}
+        p{
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 60px;
+        }
+        ul {
+            justify-content: left;
+            align-items: center;
+            flex:  0 0 14%; 
+        }
+        &-img{
+            padding: 29px 20px 29px;
+            max-height: 100%;
+            img{
+                max-width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

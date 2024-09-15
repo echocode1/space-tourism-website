@@ -1,0 +1,25 @@
+$light : hsl(0, 0%, 100%);
+$dark : hsl(0, 0%, 0%);
+$text-cl : hsl(231, 77%, 90%);
+$inactive-cl: hsl(0, 0%, 59%);
+$overlay-bg:hsla(245, 29%, 9%, 0.507);
+$header-cl-md:hsl(229, 26%, 12%);
+$header-cl-lg: rgba(194, 237, 253, 0.116);
+
+$stack__font: "Barlow";
+$header__font:'Bellefair';
+$light-header__font:"Barlow condensed";
+
+
+$mobile--bg: '../src/assets/home/background-home-mobile.jpg';
+$tab--bg: '../src/assets/home/background-home-tablet.jpg';
+$desktop--bg: '../src/assets/home/background-home-desktop.jpg';
+$destination--mobile-bg : '../src/assets/destination/background-destination-mobile.jpg';
+$destination--tab-bg: '../src/assets/destination/background-destination-tablet.jpg';
+$destination--desktop-bg : '../src/assets/destination/background-destination-desktop.jpg';
+$tech--mobile-bg : '../src/assets/technology/background-technology-mobile.jpg';
+$tech--tab-bg: '../src/assets/technology/background-technology-tablet.jpg';
+$tech--desktop-bg: '../src/assets/technology/background-technology-desktop.jpg';
+$crew--mobile-bg: '../src/assets/crew/background-crew-mobile.jpg';
+$crew--tab-bg:'../src/assets/crew/background-crew-tablet.jpg';
+$screw--desktop-bg:'../src/assets/crew/background-crew-desktop.jpg';

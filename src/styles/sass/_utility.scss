@@ -1,0 +1,30 @@
+@mixin bg--styles{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+@mixin bold--header-styles{
+    font-family: $header__font;
+    font-weight: 400;
+    color: $light;
+}
+@mixin section-padding-sm{
+    padding: 112px 24px 24px 24px;
+    margin-top: -88px;
+}
+
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin section-padding-md{
+    padding: 136px 40px 40px 40px;
+    margin-top: -96px;
+}
+@mixin section-light-header-md{
+    font-size: 24px;
+    margin-bottom: 24px;
+}

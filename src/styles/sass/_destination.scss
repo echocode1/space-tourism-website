@@ -1,0 +1,199 @@
+.destination{
+    background-image: url($destination--mobile-bg);
+    @include bg--styles;
+    font-family: $stack__font;
+    font-size: 15px;
+    color: $text-cl;
+    text-align: center;
+    @include section-padding-sm;
+    
+    #destination-light-header{
+        margin-bottom: 24px;
+        color: $light;
+    }
+    img{
+        width:150px ;
+        height: 150px;
+        margin: 24px 0;
+    }
+    &-text{
+        margin-top: 30px;
+
+        .destination-nav-list{
+            @include flex-center;
+            margin-bottom: 35px;
+
+            li{
+                list-style: none;
+                margin:0 12px;
+            }
+            .destination-btn, .visible{
+                font-size: 17px;
+                font-weight: 600;
+                cursor: pointer;
+                position: relative;
+                color: $inactive-cl;
+            }
+            .destination-btn::after, .visible::after{
+                content: '';
+                height: 2px;
+                width: 100%;
+                position: absolute;
+                right: 0;
+                bottom: -15px;
+                background-color:  $inactive-cl;
+                transform: scaleX(0);
+                transform-origin: center;
+                transition: 0.5s ease;
+            }
+            .destination-btn:hover::after{
+                transform: scaleX(1);
+            }
+
+            .visible::after{
+                transform: scaleX(1);
+                background-color: $light;
+            }
+            .visible{
+                color: $light;
+            }
+            
+        }
+        & h2{
+            @include bold--header-styles;
+            font-size: 4rem;
+            margin-bottom: 21px;
+        }
+        .nav-description{
+            line-height: 2;
+        }
+        & hr{
+            margin: 30px auto;
+        }
+        .destination-distance{ 
+            margin-bottom: 20px;
+        }
+        .distance-description,.period-description{
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .distance-description-fig, .time{
+            font-size: 2rem;
+            font-family: $header__font;
+            color: $light;
+        }
+        
+    }
+}
+@media(min-width:576px){
+    .destination{
+        background-image: url($destination--tab-bg);
+        @include section-padding-md;
+        text-align: left;
+        
+        #destination-light-header{
+            @include section-light-header-md
+        }
+        .destination-img{
+            text-align: center;
+        }
+        img{
+            width:300px ;
+            height: 300px;
+            margin: 42px auto;
+        }
+        &-text{
+            padding: 0 87px;
+            text-align: center;
+    
+            .destination-nav-list{
+                margin-bottom: 35px;
+            }
+            & h2{
+                font-size: 87px;
+                color:$light;
+            }
+            .nav-description{
+                font-size: 16px;
+                line-height: 1.8;
+            }
+            & hr{ 
+                margin: 24px auto;
+            }
+            #flex{
+                display: flex;
+                gap: 24px;
+                margin-bottom: 10px;
+            }
+            .destination-distance,
+            .destination-period{
+                margin-bottom: 0;
+                flex: 0 0 calc(50% - 12px);
+            }
+        }
+    }
+}
+@media(min-width:900px){
+    .destination-text{
+        .nav-description{
+            font-size: 17px;
+        }
+    }
+}
+@media(min-width:1000px){
+    .destination-text{
+        .nav-description{
+            font-size: 22px;
+        }
+    }
+}
+@media(min-width:1200px){
+    .destination{
+        background-image: url($destination--desktop-bg);
+        padding: 184px 130px 48px 130px;
+        margin-top: -136px;
+        text-align: left;
+        
+        #destination-light-header{
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+        .destination-main{
+            @include flex-center;
+            gap: 32px;
+        }
+        .destination-img, &-text{
+            flex: 0 0 calc(50% - 16px);
+        }
+        .destination-img{
+            padding: 127px 0;
+        }
+        img{
+            width:480px ;
+            height: 480px;
+            margin:0;
+        }
+        &-text{
+            padding: 0 47px;
+            text-align:left;
+    
+            .destination-nav-list{
+                justify-content: flex-start;
+            }
+            & h2{
+                font-size: 96px;
+                color: $light;
+            }
+            .nav-description{
+                font-size: 17.5px;
+                line-height: 1.85;
+            }
+        }
+    }
+}
+
+@media(min-width:1400px){
+    .destination{
+        padding: 184px 165px 48px 165px;
+    }
+}
