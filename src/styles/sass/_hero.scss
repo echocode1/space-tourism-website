@@ -1,8 +1,8 @@
 .hero{
     text-align: center;
     padding: 0 24px;
-    color: hsl(231, 77%, 90%);
-    font-family: "Barlow Condensed";
+    color: $text-cl;
+    font-family: $light-header__font;
 
     &-light{
         margin:2rem 0 1.5rem 0;
@@ -12,7 +12,7 @@
         font-family: $header__font;
         font-size: 80px;
         font-weight: 400;
-        color: hsl(0, 0%, 100%);
+        color: $light;
         margin-bottom: 1.5rem;
     }
     &-description{
@@ -25,8 +25,8 @@
         letter-spacing: 1.25px;
         height: 150px;
         width: 150px;
-        color: hsl(230, 35%, 7%);
-        background-color: hsl(0, 0%, 100%);
+        color: $dark;
+        background-color: $light;
         border-radius: 50%;
         border: none;
         margin-top: 80px;
@@ -38,7 +38,7 @@
         width: calc(100% + 100px);
         height: calc(100% + 100px);
         position: absolute;
-        background-color: hsla(0, 0%, 97%, 0.308);
+        background-color:$explore--btn-cl;
         border-radius: 50%;
         top: 50%;
         left: 50%;
@@ -56,7 +56,7 @@
         padding: 8rem;
     
         &-light{
-            font-size: 2rem;
+            font-size: 1.8rem;
             margin:0 0 20px 0;
         }
         &-heavy{
@@ -84,7 +84,7 @@
         margin-top: auto;
         display: flex;
         justify-content: space-between;
-        margin: 64px 180px;
+        margin: 100px 180px;
         padding: 140px 0 0 0 ;
     
         &-flex-left{
@@ -92,7 +92,7 @@
             text-align: left;
         }
         &-light{ margin:0 0 25px 0;}
-        &-heavy{margin-bottom: 35px;}
+        &-heavy{margin-bottom: 20px;}
         #hero-explore-btn{
             max-width: 272px;
             margin: auto 0;
@@ -104,8 +104,9 @@
     .hero{
         padding: 180px 0 0 0 ;
         &-description{
-            line-height: 1.7;
-            font-size: 25px;
+            line-height: 1.6;
+            padding-right: 130px;
         }
     }
+    
 }

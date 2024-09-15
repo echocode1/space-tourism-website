@@ -132,13 +132,13 @@
     }
     .header::before{
         background-color: $header-cl-lg;
-        width: 53%;
+        width: 58%;
     }
     .header::after{
         content: '';
         position: absolute;
         height: 1px;
-        width: 37%;
+        width: 32%;
         background-color: $inactive-cl;
         left: 12%;
     }

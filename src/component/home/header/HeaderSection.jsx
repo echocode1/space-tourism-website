@@ -30,15 +30,19 @@ export default function HeaderSection( {onSectionChange} ) {
   const nav = (
     <ul>
       <li onClick={() => handleActiveNav("Home")}>
+        <span style={{marginRight: "10px", fontWeight:'bold'}}>01</span>
         <span className='section-btn'>HOME</span>
       </li>
       <li onClick={() => handleActiveNav("Destination") }>
+      <span style={{marginRight: "10px", fontWeight:'bold'}}>02</span>
         <span  className='section-btn'>DESTINATION</span>
       </li>
       <li onClick={() => handleActiveNav("Crew") }>
+      <span style={{marginRight: "10px", fontWeight:'bold'}}>03</span>
         <span className='section-btn'>CREW</span>
       </li>
       <li onClick={() => handleActiveNav("Technology") }>
+      <span style={{marginRight: "10px", fontWeight:'bold'}}>04</span>
         <span className='section-btn'>TECHNOLOGY</span>
       </li>
     </ul>
