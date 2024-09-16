@@ -1,7 +1,5 @@
 .hamburger{
     position: relative;
-    height: 16px;
-    width: 35px;
     background-color: inherit;
     border: none;
     z-index: 101;
@@ -11,7 +9,7 @@
         height: 3px;
         background-color: $text-cl;
         right: 0;
-        top: 0;
+        top: -16px;
         transition: 0.5s ease;
     }
     &-top{ 

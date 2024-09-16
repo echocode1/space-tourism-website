@@ -56,16 +56,15 @@
         right: 0;
         height: 100%; 
         width: 68.5%;
-        transition:0.7s ease;
-        transform: scaleX(0);
-        transform-origin: center;
-        background-color: $overlay-bg;
-        backdrop-filter: blur(10px); 
+        transform: translateX(100%);
+        transition: transform 0.7s ease-in-out;
+        background-color: $overlay-bg ;
+        backdrop-filter: blur(1.5rem); 
         -webkit-backdrop-filter: blur(10px);
         z-index: 100;
     }
     .overlay.show{
-        transform: scaleX(1);
+        transform: translateX(0);
     }
     
 }
@@ -131,14 +130,15 @@
         }
     }
     .header::before{
-        background-color: $header-cl-lg;
+        background-color: $overlay-bg;
+        backdrop-filter: blur(1.5rem);
         width: 58%;
     }
     .header::after{
         content: '';
         position: absolute;
         height: 1px;
-        width: 32%;
+        width: 31.5%;
         background-color: $inactive-cl;
         left: 12%;
     }
